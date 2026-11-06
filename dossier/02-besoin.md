@@ -21,7 +21,7 @@ Le corpus n'est pas homogène. Le tableau classe les familles de documents et la
 
 | Famille | Exemples | Statut de publicité | Prudence |
 |---|---|---|---|
-| Délibérations et actes réglementaires | délibérations du conseil, arrêtés, règlements | en grande partie publics ; le CRPA oblige les collectivités de plus de 3 500 habitants et au-dessus d'un seuil d'agents à publier en ligne les documents qu'elles communiquent (E13) | vérifier le statut de chaque acte ; textes abrogés à signaler |
+| Délibérations et actes réglementaires | délibérations du conseil, arrêtés, règlements | publicité à vérifier acte par acte : le CRPA fait publier en ligne les documents que les administrations communiquent, hors collectivités de moins de 3 500 habitants et personnes morales sous un seuil d'agents (E13) | vérifier le statut de chaque acte ; textes abrogés à signaler |
 | Pièces de marchés publics | avis, règlements de consultation, cahiers des charges, rapports d'analyse | mixte : certaines parties relèvent du secret des affaires | exclure les offres des candidats du périmètre du pilote |
 | Documents internes | notes, procédures, comptes rendus | internes | droits d'accès par service |
 | Documents contenant des données personnelles | noms d'agents, de candidats, de titulaires | variable | pseudonymiser à l'ingestion ; part estimée à 30 % (H13) |
@@ -41,4 +41,4 @@ Le corpus n'est pas homogène. Le tableau classe les familles de documents et la
 
 ### 2.5 Contraintes de cadrage
 
-Les réponses doivent être vérifiables par l'agent. Le pilote vise 90 % de réponses correctes et sourcées (H14), cible à mesurer sur un jeu de 200 questions (H26, répartition en H30). Un refus de répondre est préféré à une réponse inventée.
+Les réponses doivent être vérifiables par l'agent. Le pilote vise 90 % de réponses correctes et sourcées (H14), cible mesurée sur les 170 questions hors pièges (H34) d'un jeu de 200 questions (H26, répartition en H30) ; les questions pièges sont notées à part (H29). Un refus de répondre est préféré à une réponse inventée.

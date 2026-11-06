@@ -65,6 +65,11 @@ for pe in G["part_eco"]:
 croise = round(net(pick(G, 1), pick(C, 0))[2])
 
 out = dict(croise_gains_centraux_couts_pessimistes=croise, scenarios=res, sensibilite=sens, seuil_part_eco=round(seuil_part, 3), grille_part_eco_x_adoption=grille)
+def net_seuil_go():
+    """Net sur 3 ans avec les gains centraux et chaque coût au central majoré de 20 % (H35)."""
+    c = {nom: v[1] * 1.2 for nom, v in C.items()}
+    return round(net(pick(G, 1), c)[2])
+
 def k(x):
     v = round(x / 1000)
     return ("-" if v < 0 else "") + f"{abs(v):,}".replace(",", " ")
@@ -93,6 +98,7 @@ def lignes_registre():
     L.append(("D09", "Net sur 3 ans quand un paramètre varie seul de pessimiste à optimiste (autres au central), en k€",
               "; ".join(f"{s_[0]} : {k(s_[1])} à {k(s_[2])}" for s_ in sens), "calcul/business_case.py ; valeurs affichées dans la figure de sensibilité"))
     L.append(("D10", "Net du scénario central, repère de la figure de sensibilité, en k€", f"{k(res['central']['net'])}", "calcul/business_case.py"))
+    L.append(("D11", "Net sur 3 ans avec les gains centraux et chaque coût au central majoré de 20 % (seuil de go, H35), en k€", f"{k(net_seuil_go())} k€ ({e(net_seuil_go())} €)", "calcul/business_case.py"))
     return "\n".join(f"| {a} | {b} | {c} | {d_} | 2026-11-06 | B |" for a, b, c, d_ in L)
 
 if __name__ == "__main__":

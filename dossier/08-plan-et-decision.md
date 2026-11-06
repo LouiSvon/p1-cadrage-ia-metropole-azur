@@ -16,22 +16,22 @@
 
 | Point | Question | Si oui | Si non |
 |---|---|---|---|
-| Fin de la phase 0 | Le temps de recherche est-il significatif et la part « retrouver » inférieure à la part « lire et résumer » ? | passer au socle et au pilote | O1 seule |
-| Fin de la phase 0 | Les devis restent-ils dans la fourchette de H20 à H23, sans tomber dans la zone pessimiste ? | pilote | revoir l'option (O2 ou O1 seule) |
+| Fin de la phase 0 | Que montre la mesure ? | « lire et résumer » domine : socle puis pilote | temps de recherche faible : arrêt du projet ; « retrouver » domine : O1 seule |
+| Fin de la phase 0 | Les devis restent-ils au plus 20 % au-dessus du central de chaque poste (H35) ? Avec les gains centraux, le net reste alors de 191 k€ (D11). | pilote | revoir l'option (O2 ou O1 seule) |
 | Mois 2 du pilote | Le gain mesuré atteint-il le seuil de H25 ? | poursuivre | arrêt |
-| Fin du pilote | 90 % de réponses correctes et sourcées (H14), aucun incident de confidentialité ? | extension | corriger puis rejouer, ou arrêt |
+| Fin du pilote | 90 % de réponses correctes et sourcées hors pièges (H14), tous les pièges refusés (H29), aucun incident de confidentialité ? | extension | corriger puis rejouer, ou arrêt |
 
 ### 8.3 Décision demandée au comité
 
 1. Autoriser dès maintenant la phase 0 (mesure préalable, AIPD, consultation du marché).
-2. Autoriser le pilote sous conditions : le go est donné si la mesure préalable confirme que le temps de recherche est significatif (H04) et si le coût réel reste dans la fourchette de H23 ; le budget du pilote est plafonné à la borne haute de H23.
+2. Autoriser le pilote sous conditions : le go est donné si la mesure préalable montre que « lire et résumer » domine le temps de recherche (H04) et si les devis restent au plus 20 % au-dessus du central de chaque poste (H35) ; le budget du pilote est plafonné au central de H23 majoré de 20 % (H35).
 3. Ne pas autoriser de déploiement général avant la décision d'extension de la phase 3.
 
-**Conditions d'arrêt.** Arrêt du pilote si l'un de ces points est constaté : gain mesuré sous le seuil de H25 à la fin du mois 2 ; taux de réponses correctes et sourcées sous 90 % (H14) à l'issue du pilote malgré les corrections ; incident de confidentialité non maîtrisé ; changement d'usage faisant entrer l'assistant dans une catégorie à haut risque sans nouvelle classification.
+**Conditions d'arrêt.** Arrêt du pilote si l'un de ces points est constaté : gain mesuré sous le seuil de H25 à la fin du mois 2 ; taux de réponses correctes et sourcées sous 90 % (H14, mesuré hors pièges) à l'issue du pilote malgré les corrections ; incident de confidentialité non maîtrisé ; changement d'usage faisant entrer l'assistant dans une catégorie à haut risque sans nouvelle classification.
 
 ### 8.4 Ce qui rendrait la recommandation fausse
 
-Elle tombe si la phase 0 montre que l'essentiel du temps perdu tient à l'indexation, auquel cas l'option O1 seule suffit et l'assistant n'est pas justifié. Elle tombe aussi si la consultation du marché place les coûts dans la zone pessimiste de H20 à H23, car le net devient alors négatif avec les gains du scénario central (D08).
+Elle tombe si la phase 0 montre que le temps de recherche est faible (arrêt du projet) ou que l'essentiel du temps perdu tient à l'indexation (l'option O1 seule suffit et l'assistant n'est pas justifié). Elle tombe aussi si la consultation du marché place les coûts au-delà du seuil de H35 : à la borne pessimiste de H20 à H23, le net devient négatif avec les gains du scénario central (D08).
 
 ### 8.5 Limites du dossier
 

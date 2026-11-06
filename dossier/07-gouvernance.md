@@ -22,7 +22,7 @@ Principes tirés de l'annexe A du NIST AI 600-1 (E04) : inventaire des systèmes
 | AIPD | C | C | R | I | A |
 | Suspension du service | R ou DSI ou DPO | R | R | I | informé immédiatement |
 | Réouverture après suspension | C | C | C | I | A |
-| Extension du périmètre | R | C | C | A | C |
+| Extension du périmètre | R | C | C | C | A |
 
 ### 7.2 Règles de fonctionnement
 
@@ -49,7 +49,7 @@ Mesurés sur le pilote de 3 mois et 50 utilisateurs (H08), présentés tous les 
 
 | Indicateur | Seuil ou cible | Pourquoi |
 |---|---|---|
-| Réponses correctes et sourcées sur le jeu de 200 questions (H26) | au moins 90 % (H14) | cible de qualité ; condition d'extension |
+| Réponses correctes et sourcées sur les 170 questions hors pièges (H34) du jeu de 200 questions (H26) | au moins 90 % (H14) | cible de qualité ; condition d'extension |
 | Questions pièges refusées par l'assistant | 100 % (H29) | un refus vaut mieux qu'une invention |
 | Réponses revues par un juriste (échantillon de 10 %, H32) | écart suivi chaque mois | détecte la dérive en exploitation |
 | Gain de temps mesuré sur la recherche | au moins 10 % à la fin du mois 2 (H25) ; sinon arrêt | le gain doit apparaître vite |

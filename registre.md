@@ -20,7 +20,7 @@ Règle : une valeur sans source reste "hypothèse". Aucun chiffre du dossier ne 
 | H11 | Dates AI Act (règlement 2026/1744) | publié au JO le 24 juillet 2026, en vigueur le 27 juillet 2026 ; systèmes à haut risque de l'annexe III : 2 décembre 2027 ; annexe I : 2 août 2028 ; marquage Article 50(2) pour les systèmes déjà sur le marché avant le 2 août 2026 : 2 décembre 2026 | EUR-Lex, texte du règlement (E05) et page de la Commission (E06) | 2026-11-06 | H |
 | H12 | Classification AI Act de l'assistant | hors haut risque sous réserve du périmètre ; obligations restantes : maîtrise de l'IA (article 4, reformulée en mesures de soutien, E09) et information des utilisateurs (article 50(1)) | analyse de l'auteur, section 4 | 2026-11-06 | M |
 | H13 | Part des documents contenant des données personnelles | 30 % | hypothèse | 2026-11-06 | B |
-| H14 | Taux de réponses correctes et sourcées, cible du pilote | 90 % | hypothèse de cadrage | 2026-11-06 | B |
+| H14 | Taux de réponses correctes et sourcées, cible du pilote, calculé sur les questions hors pièges (H34) ; les pièges sont notés à part (H29) | 90 % | hypothèse de cadrage | 2026-11-06 | B |
 | H15 | Durée d'un déploiement complet après le pilote | 12 mois | hypothèse | 2026-11-06 | B |
 | H16 | Critères de choix des options | 6 critères : valeur, risque, coût, souveraineté, délai, maturité | choix de l'auteur | 2026-11-06 | M |
 | H17 | Semaines travaillées par agent et par an | 44 semaines | hypothèse | 2026-11-06 | B |
@@ -39,9 +39,11 @@ Règle : une valeur sans source reste "hypothèse". Aucun chiffre du dossier ne 
 | H30 | Répartition du jeu de 200 questions (H26) | 80 questions factuelles simples, 60 questions multi-documents, 30 questions sur textes abrogés ou modifiés, 30 questions pièges sans réponse dans le corpus | hypothèse de cadrage | 2026-11-06 | B |
 | H31 | Durée du journal de recherche pendant la phase 0 | 2 semaines sur les 4 de la phase 0, auprès des 30 agents de H27 | hypothèse de cadrage | 2026-11-06 | B |
 | H32 | Part des réponses du pilote revues chaque mois par un juriste | 10 % des réponses, tirées au hasard | hypothèse de cadrage | 2026-11-06 | B |
+| H34 | Nombre de questions hors pièges dans le jeu de tests (200 moins 30 pièges, H26 et H30) | 170 questions | calcul à partir de H26 et H30 | 2026-11-06 | B |
+| H35 | Seuil de go sur les devis : au plus 20 % au-dessus du coût central de chaque poste (H20 à H23) ; plafond du pilote égal au central de H23 majoré de 20 % | 20 % | hypothèse de cadrage | 2026-11-06 | B |
 | H33 | Délai de réponse acceptable pour la majorité des requêtes | 10 secondes | hypothèse de cadrage | 2026-11-06 | B |
 
-Sources externes vérifiées (E) :
+Sources externes (E), état de vérification indiqué par ligne :
 
 | ID | Contenu | Source et date de lecture | Confiance |
 |---|---|---|---|
@@ -51,7 +53,7 @@ Sources externes vérifiées (E) :
 | E04 | NIST AI 600-1, 12 risques dont Confabulation, Data Privacy, Human-AI Configuration, Information Security, Intellectual Property, Value Chain and Component Integration ; publié en juillet 2024 | PDF du NIST, lu le 2026-10-29 | H |
 | E05 | Règlement (UE) 2026/1744 du 8 juillet 2026 (Digital Omnibus on AI), JO L 2026/1744 du 24 juillet 2026 | EUR-Lex, texte lu le 2026-11-06 | H |
 | E06 | La Commission indique une entrée en vigueur le 27 juillet 2026, annexe III au 2 décembre 2027, annexe I au 2 août 2028 | digital-strategy.ec.europa.eu, lu le 2026-11-06 | H |
-| E07 | Règlement (UE) 2024/1689 : annexe III point 8(a) (autorité judiciaire), article 3 (fournisseur, déployeur), article 4, article 6(3) et 6(4), article 25, article 26, article 27, article 50(1) | EUR-Lex, texte initial de 2024 lu le 2026-11-06 ; texte non consolidé avec le règlement 2026/1744 | M |
+| E07 | Règlement (UE) 2024/1689 : annexe III points 4, 5 et 8(a), article 3 (fournisseur, déployeur), article 4, article 6(3) et 6(4), article 25, article 26, article 27, article 50(1) | EUR-Lex, texte initial de 2024 lu le 2026-11-06 ; texte non consolidé avec le règlement 2026/1744 | M |
 | E08 | CNIL : une analyse d'impact (AIPD) est obligatoire en cas de risque élevé (article 35 du RGPD) ou de profilage ; page mise à jour le 8 avril 2024 | cnil.fr, lu le 2026-11-06 | M |
 | E09 | Considérant 8 du règlement 2026/1744 : l'article 4 est modifié pour que fournisseurs et déployeurs prennent des mesures de soutien à la maîtrise de l'IA de leur personnel, la Commission et les États membres soutenant ces efforts | EUR-Lex, lu le 2026-11-06 ; texte modifié de l'article 4 non lu | M |
 | E10 | Étude Stanford sur des outils d'IA de recherche juridique : réponses erronées plus de 17 % du temps pour Lexis+ AI et Ask Practical Law AI, plus de 34 % pour Westlaw AI-Assisted Research, sur plus de 200 questions ouvertes ; deux types d'erreur : erronée, ou correcte mais appuyée sur une source qui ne la soutient pas | hai.stanford.edu, page lue le 2026-11-06 ; publication dans une revue à comité de lecture en 2025 selon une source secondaire | M |
@@ -60,7 +62,7 @@ Sources externes vérifiées (E) :
 | E13 | Code des relations entre le public et l'administration, article L312-1-1 : les administrations publient en ligne les documents qu'elles communiquent en application du titre, les bases de données et données d'intérêt, sauf collectivités de moins de 3 500 habitants et personnes morales sous un seuil d'agents ; ce seuil est de 50 agents en équivalent temps plein (article D312-1-1-1) | Légifrance, article L312-1-1 lu le 2026-11-06 ; seuil de l'article D312-1-1-1 lu dans un extrait de recherche, article non ouvert | M |
 | E14 | Code général de la fonction publique, article L253-5 : le comité social territorial est compétent sur l'organisation et le fonctionnement des services et l'évolution des administrations | résumé de recherche du 2026-11-06 ; page Légifrance bloquée par une vérification anti-robot, non lue | B |
 | E15 | OWASP LLM01 Prompt Injection : injection directe ou indirecte (contenu externe qui contient des instructions) ; 7 mesures citées : contraindre le comportement, valider les formats de sortie, filtrer entrées et sorties, moindre privilège, approbation humaine des actions à risque, isoler et étiqueter le contenu non fiable, tests adverses ; aucune méthode n'est infaillible | genai.owasp.org, page lue le 2026-11-06 | H |
-| E16 | OWASP LLM08 Vector and Embedding Weaknesses : fuites entre contextes, accès non autorisé, inversion d'embeddings, empoisonnement ; 4 familles de mesures : contrôle d'accès fin par permission, validation et authentification des sources, revue des données fusionnées et classification, journalisation infalsifiable | genai.owasp.org, page lue le 2026-11-06 | H |
+| E16 | OWASP LLM08 Vector and Embedding Weaknesses : fuites entre contextes, accès non autorisé, inversion d'embeddings, empoisonnement ; 4 familles de mesures : contrôle d'accès fin par permission avec partitionnement des jeux de données, validation et authentification des sources, revue des données fusionnées et classification, journalisation infalsifiable | genai.owasp.org, page lue le 2026-11-06 | H |
 
 Valeurs calculées (D) :
 
@@ -77,4 +79,5 @@ Valeurs calculées (D) :
 | D08 | Croisement : gains du scénario central avec les coûts pessimistes, net sur 3 ans | -373 k€ (-372 600 €) | calcul/business_case.py, clé croise_gains_centraux_couts_pessimistes | 2026-11-06 | B |
 | D09 | Net sur 3 ans quand un paramètre varie seul de pessimiste à optimiste (autres au central), en k€ | part_eco : -48 à 783; adoption : -48 à 783; cout_h : 118 à 724; run_an : -23 à 577; build : 167 à 497; pilote : 287 à 407; socle : 297 à 407 | calcul/business_case.py ; valeurs affichées dans la figure de sensibilité | 2026-11-06 | B |
 | D10 | Net du scénario central, repère de la figure de sensibilité, en k€ | 367 | calcul/business_case.py | 2026-11-06 | B |
+| D11 | Net sur 3 ans avec les gains centraux et chaque coût au central majoré de 20 % (seuil de go, H35), en k€ | 191 k€ (191 400 €) | calcul/business_case.py | 2026-11-06 | B |
 <!-- D:fin -->

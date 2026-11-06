@@ -14,4 +14,4 @@ La CNIL indique que l'AIPD est obligatoire en cas de risque élevé pour les dro
 | 8. Avis et validation | avis du DPO, consultation des représentants du personnel si nécessaire, décision du comité |
 | 9. Plan de révision | révision à chaque changement de périmètre, de modèle ou de fournisseur |
 
-**Articulation avec le règlement sur l'IA.** Si l'assistant était à haut risque, une analyse d'impact sur les droits fondamentaux serait aussi requise pour un organisme de droit public (article 27 de l'AI Act, E07). Elle ne l'est pas dans le périmètre retenu ; l'AIPD en couvre l'essentiel.
+**Articulation avec le règlement sur l'IA.** Si l'assistant était à haut risque, une analyse d'impact sur les droits fondamentaux serait aussi requise pour un organisme de droit public (article 27 de l'AI Act, E07). Elle ne l'est pas dans le périmètre retenu. Que l'AIPD en couvre l'essentiel est une déduction de l'auteur, non vérifiée.

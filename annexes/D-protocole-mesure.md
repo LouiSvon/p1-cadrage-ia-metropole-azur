@@ -28,9 +28,9 @@
 
 | Constat | Décision |
 |---|---|
-| Le temps de recherche est faible par rapport à l'hypothèse | le projet n'est pas justifié ; arrêt |
-| La plus grande part du temps est perdue à retrouver | O1 d'abord ; l'assistant n'est envisagé qu'ensuite |
-| Une part importante du temps est passée à lire et résumer | pilote d'O3 justifié |
+| Le temps de recherche est faible par rapport à l'hypothèse | arrêt du projet |
+| « Retrouver » domine le temps de recherche | O1 seule ; pas d'assistant |
+| « Lire et résumer » domine | socle O1 puis pilote d'O3 |
 
 Les seuils chiffrés de ces constats sont à fixer avant la mesure, pour ne pas les ajuster aux résultats : le comité les arrête à l'ouverture de la phase 0.
 

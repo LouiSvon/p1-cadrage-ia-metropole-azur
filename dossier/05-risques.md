@@ -29,7 +29,7 @@ Catégories de référence : OWASP LLM Top 10 2025 (E03), NIST AI 600-1 (E04), A
 
 **R01, réponse fausse.**
 - *Scénario.* Un agent demande les conditions d'un recours en marché public ; l'assistant cite un article qui n'existe pas ou dont le texte dit autre chose. L'agent, pressé, recopie la réponse dans une note.
-- *Ce que disent les cas réels.* Les outils commerciaux d'IA de recherche juridique testés par Stanford se trompent plus de 17 % du temps, et un second type d'erreur existe : une réponse juste appuyée sur une source qui ne la soutient pas (E10). Une organisation est tenue de ce que dit son agent conversationnel (E12).
+- *Ce que disent les cas réels.* Les outils commerciaux d'IA de recherche juridique testés par Stanford se trompent plus de 17 % du temps, et un second type d'erreur existe : une réponse juste appuyée sur une source qui ne la soutient pas (E10). Dans une décision canadienne, une entreprise a été jugée responsable de l'information inexacte donnée par son agent conversationnel (E12) ; le cas visait des clients, non un outil interne, et ne vaut pas règle générale.
 - *Mesures.* Citation obligatoire d'un passage ; refus si aucun passage n'est retrouvé ; contrôle automatique que la citation existe et contient l'information annoncée ; revue de 10 % des réponses chaque mois par un juriste (H32).
 - *Test de recette.* Les 30 questions pièges du jeu de tests (H30) doivent toutes aboutir à un refus (H29). Les 30 questions sur textes abrogés ou modifiés doivent faire apparaître le statut du texte.
 - *Détection en exploitation.* Taux de réponses signalées comme fausses par les agents ; écart entre les réponses revues et les réponses attendues.

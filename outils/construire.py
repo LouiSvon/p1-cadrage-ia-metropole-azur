@@ -12,7 +12,7 @@ def inclure_svg(texte):
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 CSS = """
 @page { size: A4; margin: 18mm 17mm 18mm 17mm; }
-body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 10.6pt; line-height: 1.45; color: #1c1c1c; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 10.4pt; line-height: 1.42; color: #1c1c1c; }
 h1 { font-size: 20pt; margin: 0 0 6pt; } h2 { font-size: 13.5pt; margin: 12pt 0 4pt; border-bottom: 1px solid #999; padding-bottom: 2pt; }
 h3 { font-size: 11pt; margin: 8pt 0 2pt; } p { margin: 3pt 0 5pt; } li { margin: 1pt 0; }
 table { border-collapse: collapse; width: 100%; margin: 5pt 0 7pt; font-size: 9pt; page-break-inside: auto; }

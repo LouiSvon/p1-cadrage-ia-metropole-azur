@@ -2,7 +2,7 @@
 
 > **Cas fictif.** Métropole Azur est un client inventé. Les chiffres du client sont des hypothèses déclarées dans le registre (annexe A). Relecture externe à fournir.
 
-Ces annexes complètent le dossier de 15 pages (le cahier plafonne le dossier à 15 pages ; les annexes sont un document séparé, sans limite). Elles servent à vérifier le dossier et à passer à l'action.
+Ces annexes complètent le dossier de 15 pages (le cahier plafonne le dossier à 15 pages ; les annexes sont un document séparé, hors du plafond de 15 pages du dossier). Elles servent à vérifier le dossier et à passer à l'action.
 
 | Annexe | Contenu |
 |---|---|

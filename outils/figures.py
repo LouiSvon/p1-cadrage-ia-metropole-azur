@@ -41,7 +41,7 @@ def scenarios():
         out.append(f'<rect x="{x0}" y="{base-h(g):.1f}" width="60" height="{h(g):.1f}" fill="#4a9a6a"/><text x="{x0+30}" y="{base-h(g)-4:.1f}" text-anchor="middle">{k(g)}</text>')
         out.append(f'<rect x="{x0+70}" y="{base-h(c):.1f}" width="60" height="{h(c):.1f}" fill="#c4704f"/><text x="{x0+100}" y="{base-h(c)-4:.1f}" text-anchor="middle">{k(c)}</text>')
         out.append(f'<text x="{x0+65}" y="{base+16}" text-anchor="middle" class="t">{lab}</text><text x="{x0+65}" y="{base+30}" text-anchor="middle">net {k(S[n]["net"])}</text>')
-    out.append(f'<text x="470" y="30"><tspan fill="#4a9a6a">■</tspan> gains  <tspan fill="#c4704f">■</tspan> coûts</text></svg>')
+    out.append(f'<text x="470" y="14"><tspan fill="#4a9a6a">■</tspan> gains  <tspan fill="#c4704f">■</tspan> coûts</text></svg>')
     return "\n".join(out)
 
 (racine / "dossier" / "figures" / "tornade.svg").write_text(tornade(), encoding="utf-8")

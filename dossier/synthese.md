@@ -34,9 +34,9 @@ Le central est positif mais fragile : il couvre ses coûts à partir de 21.2 % d
 
 ## La décision demandée
 1. Autoriser la phase de mesure préalable, l'AIPD et la consultation du marché.
-2. Autoriser le pilote sous conditions, avec un budget plafonné à la borne haute de H23.
+2. Autoriser le pilote sous conditions, avec un budget plafonné au central de H23 majoré de 20 % (H35).
 3. Refuser tout déploiement général avant la décision d'extension.
 
-**Arrêt du pilote** si le gain mesuré reste sous 10 % à la fin du mois 2 (H25), si les réponses correctes et sourcées passent sous 90 % (H14), ou en cas d'incident de confidentialité non maîtrisé.
+**Arrêt du pilote** si le gain mesuré reste sous 10 % à la fin du mois 2 (H25), si les réponses correctes et sourcées passent sous 90 % hors pièges (H14), ou en cas d'incident de confidentialité non maîtrisé.
 
-**Ce qui rendrait la recommandation fausse.** La mesure préalable montre que le temps est perdu à retrouver plutôt qu'à lire : O1 seule suffit. Ou les devis réels tombent dans la zone pessimiste des coûts.
+**Ce qui rendrait la recommandation fausse.** La mesure préalable montre un temps de recherche faible (arrêt) ou un temps perdu surtout à retrouver : O1 seule suffit. Ou les devis réels dépassent le seuil de H35.

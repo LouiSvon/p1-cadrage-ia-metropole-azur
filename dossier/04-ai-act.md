@@ -13,9 +13,9 @@ Un déployeur est un organisme qui utilise un système d'IA sous son autorité (
 | Option | Rôle probable | Conséquence |
 |---|---|---|
 | O2 : service externe | déployeur | obligations de déployeur ; le fournisseur porte la documentation du système |
-| O3 : assistant hébergé | fournisseur possible, si la métropole fait développer l'assistant et le met en service sous son nom | obligations de fournisseur à examiner avec la direction juridique, même hors haut risque (documentation de classification, information des utilisateurs) |
+| O3 : assistant hébergé | fournisseur possible, si la métropole fait développer l'assistant et le met en service sous son nom | obligations de fournisseur à examiner avec la direction juridique : information des utilisateurs (article 50, paragraphe 1), note de classification recommandée |
 
-Ce changement de rôle est un coût de conformité caché d'O3 : il faut le décider avant le pilote. Le modèle de langage ouvert utilisé en O3 a son propre fournisseur ; les obligations propres aux modèles d'IA à usage général pèsent sur lui, non sur la métropole, sans que ce dossier ait relu les articles correspondants.
+Ce changement de rôle est un coût de conformité caché d'O3 : il faut le décider avant le pilote. Le modèle de langage ouvert utilisé en O3 a son propre fournisseur ; les obligations propres aux modèles d'IA à usage général pèsent a priori sur lui, non sur la métropole ; ce point est à vérifier (articles non lus), notamment si la métropole modifie ou réentraîne le modèle.
 
 ### 4.3 Classification : l'assistant n'est pas un système à haut risque, sous réserve du périmètre
 
