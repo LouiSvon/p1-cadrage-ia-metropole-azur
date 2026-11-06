@@ -41,6 +41,7 @@ Le script recalcule le business case, réécrit les lignes D du registre, régé
 - Gravités, probabilités et coûts sont des jugements de l'auteur.
 - Le contrôle des chiffres ne vérifie pas les nombres écrits en lettres.
 
-## Licence
+## Licences
 
-MIT, voir `LICENSE`.
+- Code (`calcul/`, `outils/`, `verification/`) : MIT, voir `LICENSE`.
+- Documents (`dossier/`, `livrables/`, `registre.md`, `sources.md`, `notes/`, `cahier.md`, `archives/`) : Creative Commons Attribution 4.0 (CC BY 4.0), voir `LICENSE-DOCS.md`.
