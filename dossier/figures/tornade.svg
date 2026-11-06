@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" width="100%" role="img" aria-label="Sensibilité du net sur 3 ans">
+<style>text{font:11px sans-serif;fill:#222} .t{font-weight:bold}</style>
+<text x="4" y="16" class="t">Net sur 3 ans (k€) quand un paramètre varie seul, les autres au central</text>
+<text x="4" y="46">Part de temps économisée</text>
+<rect x="190.0" y="32" width="420.0" height="20" fill="#5b8bd6"/>
+<text x="186.0" y="46" text-anchor="end">-48</text>
+<text x="614.0" y="46">783</text>
+<text x="4" y="76">Taux d'adoption</text>
+<rect x="190.0" y="62" width="420.0" height="20" fill="#5b8bd6"/>
+<text x="186.0" y="76" text-anchor="end">-48</text>
+<text x="614.0" y="76">783</text>
+<text x="4" y="106">Coût horaire</text>
+<rect x="274.0" y="92" width="306.0" height="20" fill="#5b8bd6"/>
+<text x="270.0" y="106" text-anchor="end">118</text>
+<text x="584.0" y="106">724</text>
+<text x="4" y="136">Exploitation annuelle</text>
+<rect x="203.0" y="122" width="303.0" height="20" fill="#5b8bd6"/>
+<text x="199.0" y="136" text-anchor="end">-23</text>
+<text x="510.1" y="136">577</text>
+<text x="4" y="166">Construction</text>
+<rect x="299.0" y="152" width="166.7" height="20" fill="#5b8bd6"/>
+<text x="295.0" y="166" text-anchor="end">167</text>
+<text x="469.7" y="166">497</text>
+<text x="4" y="196">Pilote</text>
+<rect x="359.6" y="182" width="60.6" height="20" fill="#5b8bd6"/>
+<text x="355.6" y="196" text-anchor="end">287</text>
+<text x="424.2" y="196">407</text>
+<text x="4" y="226">Socle (O1)</text>
+<rect x="364.6" y="212" width="55.6" height="20" fill="#5b8bd6"/>
+<text x="360.6" y="226" text-anchor="end">297</text>
+<text x="424.2" y="226">407</text>
+<line x1="400.0" x2="400.0" y1="24" y2="246" stroke="#b33" stroke-dasharray="4 3"/>
+<line x1="214.4" x2="214.4" y1="24" y2="246" stroke="#555"/>
+<text x="403.0" y="242" fill="#b33">central 367</text></svg>

@@ -5,7 +5,7 @@ Limite : les nombres écrits en lettres (quatre, quatorze) ne sont pas contrôl�
 import re, sys, pathlib
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
-FICHIERS = sorted((RACINE / "dossier").glob("*.md"))
+FICHIERS = sorted((RACINE / "dossier").glob("*.md")) + sorted((RACINE / "annexes").glob("*.md")) + sorted((RACINE / "dossier" / "figures").glob("*.svg"))
 MOIS = "janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre"
 
 # Constructions qui contiennent des chiffres sans être des chiffres du dossier : identifiants, références, dates, numérotation.
@@ -25,6 +25,9 @@ NOMBRE = re.compile(r"\d+(?:[  .,]\d{3})*(?:[.,]\d+)?")
 
 def norm(tok):
     return tok.replace(" ", "").replace(" ", "").replace(" ", "").replace(",", ".")
+
+def sans_balises(texte):
+    return re.sub(r"<[^>]+>", " ", re.sub(r"<style.*?</style>", " ", texte, flags=re.S))
 
 def jetons(texte):
     return {norm(t) for t in NOMBRE.findall(texte)}
@@ -52,7 +55,8 @@ if __name__ == "__main__":
         autotest(); sys.exit(0)
     reg = charger_registre(); code = 0
     for f in FICHIERS:
-        m = manquants(f.read_text(encoding="utf-8"), reg)
+        t = f.read_text(encoding="utf-8")
+        m = manquants(sans_balises(t) if f.suffix == ".svg" else t, reg)
         print(f"{f.name}: {'OK' if not m else 'ABSENTS DU REGISTRE ' + ', '.join(m)}")
         code |= bool(m)
     sys.exit(code)

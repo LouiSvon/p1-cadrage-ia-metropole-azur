@@ -7,7 +7,7 @@
 **La recommandation en une phrase.** Mesurer d'abord, piloter ensuite, ne généraliser qu'après : une mesure préalable de 4 semaines (H27), puis un pilote de 3 mois et 50 utilisateurs (H08) plafonné, et aucun déploiement général avant les résultats.
 
 ## Le problème
-Les agents passent en moyenne 3 h par semaine à chercher des documents (H04), sur un corpus estimé à 200 000 pièces (H07). C'est une hypothèse : le dossier prévoit de la mesurer avant d'investir.
+Les agents passent en moyenne 3 h par semaine à chercher des documents (H04), sur un corpus estimé à 200 000 pièces (H07). C'est une hypothèse : le dossier prévoit de la mesurer avant d'investir. Repère externe : des outils commerciaux d'IA de recherche juridique se sont trompés plus de 17 % du temps dans une étude Stanford (E10), d'où la cible de 90 % de réponses correctes et sourcées (H14) et le refus de répondre sans source.
 
 ## Les options
 | Option | Verdict |

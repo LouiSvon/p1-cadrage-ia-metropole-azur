@@ -36,6 +36,10 @@ Règle : une valeur sans source reste "hypothèse". Aucun chiffre du dossier ne 
 | H27 | Durée de la mesure préalable du temps de recherche | 4 semaines, auprès de 30 agents | hypothèse de cadrage | 2026-11-06 | B |
 | H28 | Fréquence du comité de suivi du pilote | tous les mois | hypothèse de cadrage | 2026-11-06 | B |
 | H29 | Part des questions sans réponse dans le corpus devant être refusées par l'assistant | 100 % des questions pièges du jeu de test (H26) | hypothèse de cadrage | 2026-11-06 | B |
+| H30 | Répartition du jeu de 200 questions (H26) | 80 questions factuelles simples, 60 questions multi-documents, 30 questions sur textes abrogés ou modifiés, 30 questions pièges sans réponse dans le corpus | hypothèse de cadrage | 2026-11-06 | B |
+| H31 | Durée du journal de recherche pendant la phase 0 | 2 semaines sur les 4 de la phase 0, auprès des 30 agents de H27 | hypothèse de cadrage | 2026-11-06 | B |
+| H32 | Part des réponses du pilote revues chaque mois par un juriste | 10 % des réponses, tirées au hasard | hypothèse de cadrage | 2026-11-06 | B |
+| H33 | Délai de réponse acceptable pour la majorité des requêtes | 10 secondes | hypothèse de cadrage | 2026-11-06 | B |
 
 Sources externes vérifiées (E) :
 
@@ -50,6 +54,13 @@ Sources externes vérifiées (E) :
 | E07 | Règlement (UE) 2024/1689 : annexe III point 8(a) (autorité judiciaire), article 3 (fournisseur, déployeur), article 4, article 6(3) et 6(4), article 25, article 26, article 27, article 50(1) | EUR-Lex, texte initial de 2024 lu le 2026-11-06 ; texte non consolidé avec le règlement 2026/1744 | M |
 | E08 | CNIL : une analyse d'impact (AIPD) est obligatoire en cas de risque élevé (article 35 du RGPD) ou de profilage ; page mise à jour le 8 avril 2024 | cnil.fr, lu le 2026-11-06 | M |
 | E09 | Considérant 8 du règlement 2026/1744 : l'article 4 est modifié pour que fournisseurs et déployeurs prennent des mesures de soutien à la maîtrise de l'IA de leur personnel, la Commission et les États membres soutenant ces efforts | EUR-Lex, lu le 2026-11-06 ; texte modifié de l'article 4 non lu | M |
+| E10 | Étude Stanford sur des outils d'IA de recherche juridique : réponses erronées plus de 17 % du temps pour Lexis+ AI et Ask Practical Law AI, plus de 34 % pour Westlaw AI-Assisted Research, sur plus de 200 questions ouvertes ; deux types d'erreur : erronée, ou correcte mais appuyée sur une source qui ne la soutient pas | hai.stanford.edu, page lue le 2026-11-06 ; publication dans une revue à comité de lecture en 2025 selon une source secondaire | M |
+| E11 | Guide de l'ANSSI, recommandations de sécurité pour un système d'IA générative, publié le 29 avril 2024 ; il porte sur la sécurité de l'architecture et exclut la qualité des données, l'éthique et la protection des données personnelles ; 35 recommandations selon une source secondaire | messervices.cyber.gouv.fr, page de présentation lue le 2026-11-06 ; PDF non lu | M |
+| E12 | Moffatt c. Air Canada, 2024 BCCRT 149 : un tribunal de Colombie-Britannique juge la compagnie responsable de l'information inexacte donnée par son agent conversationnel (déclaration inexacte par négligence) ; décision d'un tribunal de petites créances | commentaires de cabinets d'avocats lus le 2026-11-06 ; décision non lue | M |
+| E13 | Code des relations entre le public et l'administration, article L312-1-1 : les administrations publient en ligne les documents qu'elles communiquent en application du titre, les bases de données et données d'intérêt, sauf collectivités de moins de 3 500 habitants et personnes morales sous un seuil d'agents ; ce seuil est de 50 agents en équivalent temps plein (article D312-1-1-1) | Légifrance, article L312-1-1 lu le 2026-11-06 ; seuil de l'article D312-1-1-1 lu dans un extrait de recherche, article non ouvert | M |
+| E14 | Code général de la fonction publique, article L253-5 : le comité social territorial est compétent sur l'organisation et le fonctionnement des services et l'évolution des administrations | résumé de recherche du 2026-11-06 ; page Légifrance bloquée par une vérification anti-robot, non lue | B |
+| E15 | OWASP LLM01 Prompt Injection : injection directe ou indirecte (contenu externe qui contient des instructions) ; 7 mesures citées : contraindre le comportement, valider les formats de sortie, filtrer entrées et sorties, moindre privilège, approbation humaine des actions à risque, isoler et étiqueter le contenu non fiable, tests adverses ; aucune méthode n'est infaillible | genai.owasp.org, page lue le 2026-11-06 | H |
+| E16 | OWASP LLM08 Vector and Embedding Weaknesses : fuites entre contextes, accès non autorisé, inversion d'embeddings, empoisonnement ; 4 familles de mesures : contrôle d'accès fin par permission, validation et authentification des sources, revue des données fusionnées et classification, journalisation infalsifiable | genai.owasp.org, page lue le 2026-11-06 | H |
 
 Valeurs calculées (D) :
 
@@ -64,4 +75,6 @@ Valeurs calculées (D) :
 | D06 | Écart de net (pessimiste à optimiste) par facteur, en k€ | part_eco : 832; adoption : 832; cout_h : 606; run_an : 600; build : 330; pilote : 120; socle : 110 | calcul/business_case.py | 2026-11-06 | B |
 | D07 | Valeurs arrondies à l'euro utilisées à l'oral dans le pitch (net sur 3 ans pessimiste / central / optimiste) | -1 176 000 € / 367 000 € / 2 391 000 € | arrondis de D01 à D03 | 2026-11-06 | B |
 | D08 | Croisement : gains du scénario central avec les coûts pessimistes, net sur 3 ans | -373 k€ (-372 600 €) | calcul/business_case.py, clé croise_gains_centraux_couts_pessimistes | 2026-11-06 | B |
+| D09 | Net sur 3 ans quand un paramètre varie seul de pessimiste à optimiste (autres au central), en k€ | part_eco : -48 à 783; adoption : -48 à 783; cout_h : 118 à 724; run_an : -23 à 577; build : 167 à 497; pilote : 287 à 407; socle : 297 à 407 | calcul/business_case.py ; valeurs affichées dans la figure de sensibilité | 2026-11-06 | B |
+| D10 | Net du scénario central, repère de la figure de sensibilité, en k€ | 367 | calcul/business_case.py | 2026-11-06 | B |
 <!-- D:fin -->

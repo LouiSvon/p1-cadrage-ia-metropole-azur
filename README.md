@@ -13,7 +13,8 @@ Dossier de conseil qui cadre un cas d'usage IA : un assistant interne qui aide d
 
 | Fichier | Contenu |
 |---|---|
-| `livrables/dossier-cadrage-metropole-azur.pdf` | dossier de 9 pages |
+| `livrables/dossier-cadrage-metropole-azur.pdf` | dossier de 15 pages (plafond du cahier) |
+| `livrables/annexes-dossier-cadrage.pdf` | annexes : registre, sources, plan de test, protocole de mesure, cartographie, AIPD, achats, glossaire |
 | `livrables/synthese-2-pages.pdf` | synthèse de 2 pages |
 | `dossier/pitch-5-minutes.md` | script de pitch de 5 minutes |
 | `dossier/*.md` | sources du dossier, une section par fichier |

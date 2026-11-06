@@ -13,6 +13,8 @@ Bonjour. Avant de commencer, un point de transparence : Métropole Azur est un c
 
 Imaginez une métropole de 500 000 habitants et de 4 000 agents. Environ 600 d'entre eux, juristes, acheteurs, services administratifs, cherchent chaque semaine des délibérations, des règlements, des pièces de marchés. Mon hypothèse de départ : 3 heures par semaine et par agent. Sur 200 000 documents répartis dans plusieurs outils.
 
+Un repère pour garder les pieds sur terre : une étude de Stanford sur des outils commerciaux d'IA de recherche juridique a trouvé des réponses erronées plus de 17 % du temps. Un assistant juridique doit donc être conçu en supposant qu'il se trompera.
+
 La question du comité est simple : faut-il lancer un assistant IA qui retrouve et résume ces textes, en citant ses sources ?
 
 **[1:15] Les options**

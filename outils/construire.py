@@ -1,7 +1,13 @@
 """Assemble des fichiers Markdown en un PDF (Markdown vers HTML, puis Chrome sans interface).
 Usage : python outils/construire.py "Titre" sortie.pdf fichier1.md [fichier2.md ...]
 Dépendance : le paquet Python `markdown` (voir requirements.txt) et Google Chrome."""
-import subprocess, sys, tempfile, pathlib, markdown
+import re, subprocess, sys, tempfile, pathlib, markdown
+
+RACINE = pathlib.Path(__file__).resolve().parent.parent
+
+def inclure_svg(texte):
+    """Remplace <!-- SVG:chemin --> par le contenu du fichier SVG (chemin relatif à la racine du dépôt)."""
+    return re.sub(r"<!-- SVG:(\S+) -->", lambda m: (RACINE / m.group(1)).read_text(encoding="utf-8"), texte)
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 CSS = """
@@ -19,7 +25,7 @@ def main():
     titre, out, *files = sys.argv[1:]
     parts = []
     for i, f in enumerate(files):
-        html = markdown.markdown(pathlib.Path(f).read_text(encoding="utf-8").split("---\n", 2)[-1] if pathlib.Path(f).read_text(encoding="utf-8").startswith("---\n") else pathlib.Path(f).read_text(encoding="utf-8"), extensions=["tables"])
+        html = markdown.markdown(inclure_svg(pathlib.Path(f).read_text(encoding="utf-8").split("---\n", 2)[-1] if pathlib.Path(f).read_text(encoding="utf-8").startswith("---\n") else pathlib.Path(f).read_text(encoding="utf-8")), extensions=["tables"])
         parts.append(f'<section class="{"first" if i == 0 else "c"}">{html}</section>')
     doc = f'<!doctype html><html lang="fr"><meta charset="utf-8"><title>{titre}</title><style>{CSS}</style><body>{"".join(parts)}</body></html>'
     with tempfile.TemporaryDirectory() as d:

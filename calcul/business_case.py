@@ -90,6 +90,9 @@ def lignes_registre():
               " / ".join(f"{e(round(res[n]['net'], -3))} €" for n in ("pessimiste", "central", "optimiste")), "arrondis de D01 à D03"))
     L.append(("D08", "Croisement : gains du scénario central avec les coûts pessimistes, net sur 3 ans",
               f"{k(croise)} k€ ({e(croise)} €)", "calcul/business_case.py, clé croise_gains_centraux_couts_pessimistes"))
+    L.append(("D09", "Net sur 3 ans quand un paramètre varie seul de pessimiste à optimiste (autres au central), en k€",
+              "; ".join(f"{s_[0]} : {k(s_[1])} à {k(s_[2])}" for s_ in sens), "calcul/business_case.py ; valeurs affichées dans la figure de sensibilité"))
+    L.append(("D10", "Net du scénario central, repère de la figure de sensibilité, en k€", f"{k(res['central']['net'])}", "calcul/business_case.py"))
     return "\n".join(f"| {a} | {b} | {c} | {d_} | 2026-11-06 | B |" for a, b, c, d_ in L)
 
 if __name__ == "__main__":
